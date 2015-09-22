@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SimpleExpressionEvaluator;
 
 namespace ConsoleApplication
 {
@@ -12,14 +13,13 @@ namespace ConsoleApplication
         {
             Console.WriteLine("Kalkulator");
 
+            ExpressionEvaluator expressionEvaluator = new ExpressionEvaluator();
+            Console.WriteLine("Podaj wyrażenie: ");
+            var expression = Console.ReadLine();
+            var result = expressionEvaluator.Evaluate(expression);
 
-            Console.WriteLine("Podaj a:");
-            var val1 = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Wynik: {0}", result);
 
-            Console.WriteLine("Podaj b:");
-            var val2 = Int32.Parse(Console.ReadLine());
-
-            Console.WriteLine("a + b = {0}", val1 + val2);
 
             Console.ReadLine();
         }
