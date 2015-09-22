@@ -12,6 +12,15 @@ namespace ConsoleApplication
         {
             Console.WriteLine("Kalkulator");
 
+
+            Console.WriteLine("Podaj a:");
+            var val1 = Int32.Parse(Console.ReadLine());
+
+            Console.WriteLine("Podaj b:");
+            var val2 = Int32.Parse(Console.ReadLine());
+
+            Console.WriteLine("a + b = {0}", val1 + val2);
+
             Console.ReadLine();
         }
     }
