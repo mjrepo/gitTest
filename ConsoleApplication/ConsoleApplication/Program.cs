@@ -13,10 +13,10 @@ namespace ConsoleApplication
             Console.WriteLine("Kalkulator");
 
 
-            Console.WriteLine("Podaj a:");
+            Console.WriteLine("Podaj liczbę a:");
             var val1 = Int32.Parse(Console.ReadLine());
 
-            Console.WriteLine("Podaj b:");
+            Console.WriteLine("Podaj liczbę b:");
             var val2 = Int32.Parse(Console.ReadLine());
 
             Console.WriteLine("a + b = {0}", val1 + val2);
