@@ -11,8 +11,8 @@ namespace ConsoleApplication
         static void Main(string[] args)
         {
             Console.WriteLine("Kalkulator");
-           
-            Console.ReadLine()l            
+
+            Console.ReadLine();
         }
     }
 }
